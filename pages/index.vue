@@ -2,13 +2,15 @@
   <main>
     <Hero />
     <div class="bg-white">
-      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <p
-          class="text-center text-base font-semibold uppercase text-gray-600 tracking-wider"
+          class="text-base font-semibold tracking-wider text-center text-gray-600 uppercase"
         >
           Meer dan 6.500 tevreden klanten en geproduceerde video’s
         </p>
-        <LogoCloud :logos="logos" />
+        <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
+          <LogoCloud v-for="logo in logos" :key="logo.alt" :logo="logo" />
+        </div>
       </div>
     </div>
     <div class="bg-white">
@@ -28,18 +30,26 @@
           </p>
         </div>
       </div>
-      <div class="mt-8 pb-12 bg-white sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
+      <div class="pb-12 mt-8 bg-white sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
         <div class="relative">
-          <div class="absolute inset-0 h-3/4 bg-white"></div>
-          <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <PricingCards :prices="prices" />
+          <div class="absolute inset-0 bg-white h-3/4"></div>
+          <div class="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div
+              class="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0"
+            >
+              <PricingCards
+                v-for="price in prices"
+                :key="price.price"
+                :price="price"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
     <Content />
     <div class="bg-white">
-      <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div class="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
           Veelgestelde vragen
         </h2>
