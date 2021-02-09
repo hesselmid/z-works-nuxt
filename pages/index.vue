@@ -64,6 +64,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: 'Professionele bedrijfsfilm laten maken?',
+    };
+  },
   data() {
     return {
       logos: [],
