@@ -59,16 +59,18 @@
             >
               <div class="rounded-md shadow">
                 <a
-                  href="#"
+                  href="#contact-form"
                   class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-yellow-600 border border-transparent rounded-md hover:bg-yellow-700 md:py-4 md:text-lg md:px-10"
+                  v-smooth-scroll="{ duration: 1000 }"
                 >
                   Offerte aanvragen
                 </a>
               </div>
               <div class="mt-3 sm:mt-0 sm:ml-3">
                 <a
-                  href="#"
+                  href="#contact-form"
                   class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-yellow-700 bg-yellow-100 border border-transparent rounded-md hover:bg-yellow-200 md:py-4 md:text-lg md:px-10"
+                  v-smooth-scroll="{ duration: 1000 }"
                 >
                   Contact
                 </a>
