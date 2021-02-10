@@ -4,7 +4,6 @@
       <div>
         <h3
           class="inline-flex px-4 py-1 text-sm font-semibold tracking-wide text-yellow-600 uppercase bg-yellow-100 rounded-full"
-          id="tier-standard"
         >
           {{ price.headline }}
         </h3>
