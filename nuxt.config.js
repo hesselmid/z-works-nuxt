@@ -25,5 +25,7 @@ export default {
         removeRedundantAttributes: false,
       },
     },
+    transpile: ['vue2-smooth-scroll'],
   },
+  plugins: ['~/plugins/vue2-smooth-scroll.js'],
 };

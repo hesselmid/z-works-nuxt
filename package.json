@@ -9,7 +9,8 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.4.0",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "vue2-smooth-scroll": "^1.5.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.2",
