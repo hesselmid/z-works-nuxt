@@ -19,9 +19,11 @@ export default {
   },
   components: true,
   buildModules: ['@nuxtjs/tailwindcss'],
-  html: {
-    minify: {
-      removeRedundantAttributes: false,
+  build: {
+    html: {
+      minify: {
+        removeRedundantAttributes: false,
+      },
     },
   },
 };
