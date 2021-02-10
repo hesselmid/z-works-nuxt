@@ -5,23 +5,23 @@
         <h3
           class="inline-flex px-4 py-1 text-sm font-semibold tracking-wide text-yellow-600 uppercase bg-yellow-100 rounded-full"
         >
-          {{ price.headline }}
+          {{ headline }}
         </h3>
       </div>
       <div class="flex items-baseline mt-4 text-6xl font-extrabold">
-        € {{ price.price }}
+        &euro; {{ price }}
         <span class="ml-1 text-2xl font-medium text-gray-500">
           Excl. BTW
         </span>
       </div>
-      <p class="mt-5 text-lg text-gray-500">{{ price.subline }}</p>
+      <p class="mt-5 text-lg text-gray-500">{{ subline }}</p>
     </div>
     <div
       class="flex flex-col justify-between flex-1 px-6 pt-6 pb-8 space-y-6 bg-gray-50 sm:p-10 sm:pt-6"
     >
       <ul class="space-y-4">
-        <PricingFeatures
-          v-for="feature in price.features"
+        <PricingFeature
+          v-for="feature in features"
           :key="feature"
           :feature="feature"
         />
@@ -41,6 +41,6 @@
 
 <script>
 export default {
-  props: ['price'],
+  props: ['headline', 'price', 'subline', 'features'],
 };
 </script>

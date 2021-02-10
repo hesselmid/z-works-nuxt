@@ -1,6 +1,7 @@
 <template>
   <main>
     <Hero />
+
     <div class="bg-white">
       <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <p
@@ -9,10 +10,11 @@
           Meer dan 6.500 tevreden klanten en geproduceerde video’s
         </p>
         <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
-          <LogoCloud v-for="logo in logos" :key="logo.alt" :logo="logo" />
+          <CloudLogo v-for="logo in logos" :key="logo.alt" v-bind="logo" />
         </div>
       </div>
     </div>
+
     <div class="bg-white">
       <div class="px-4 mx-auto mt-8 text-center max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto space-y-2 lg:max-w-none">
@@ -37,17 +39,19 @@
             <div
               class="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0"
             >
-              <PricingCards
+              <PricingCard
                 v-for="price in prices"
                 :key="price.price"
-                :price="price"
+                v-bind="price"
               />
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <Content />
+
     <div class="bg-white">
       <div class="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
@@ -58,6 +62,7 @@
         </div>
       </div>
     </div>
+
     <ContactForm />
   </main>
 </template>
