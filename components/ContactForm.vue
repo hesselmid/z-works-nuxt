@@ -28,6 +28,7 @@
             name="contact"
             method="POST"
             data-netlify="true"
+            action="/bedankt"
             class="grid grid-cols-1 mt-9 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
           >
             <input type="hidden" name="form-name" value="contact" />
