@@ -9,63 +9,17 @@
         >
           Meer dan 6.500 tevreden klanten en geproduceerde video’s
         </p>
-        <!-- <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
-          <CloudLogo v-for="logo in logos" :key="logo.alt" v-bind="logo" />
-        </div> -->
         <div class="grid gap-8 mt-6 md:grid-cols-2 lg:mt-8">
-          <div>
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe
-                src="https://player.vimeo.com/video/506079196?title=0&byline=0&portrait=0"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:15px;"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-          <div>
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe
-                src="https://player.vimeo.com/video/506079293?title=0&byline=0&portrait=0"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:15px;"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-          <div>
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe
-                src="https://player.vimeo.com/video/511581071?title=0&byline=0&portrait=0"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:15px;"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-          <div>
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe
-                src="https://player.vimeo.com/video/506079156?title=0&byline=0&portrait=0"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:15px;"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
+          <VimeoEmbed
+            v-for="vimeoId in vimeoIds"
+            :key="vimeoId.id"
+            v-bind="vimeoId"
+          />
         </div>
       </div>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-white" id="prices">
       <div class="px-4 mx-auto mt-8 text-center max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto space-y-2 lg:max-w-none">
           <h2
@@ -132,33 +86,11 @@ export default {
     };
   },
   fetch() {
-    this.logos = [
-      {
-        imageUrl:
-          'https://tailwindui.com/img/logos/transistor-logo-gray-400.svg',
-        alt: 'Workcation',
-      },
-      {
-        imageUrl: 'https://tailwindui.com/img/logos/mirage-logo-gray-400.svg',
-        alt: 'Mirage',
-      },
-      {
-        imageUrl: 'https://tailwindui.com/img/logos/tuple-logo-gray-400.svg',
-        alt: 'Tuple',
-      },
-      {
-        imageUrl: 'https://tailwindui.com/img/logos/laravel-logo-gray-400.svg',
-        alt: 'Laravel',
-      },
-      {
-        imageUrl:
-          'https://tailwindui.com/img/logos/statickit-logo-gray-400.svg',
-        alt: 'StaticKit',
-      },
-      {
-        imageUrl: 'https://tailwindui.com/img/logos/statamic-logo-gray-400.svg',
-        alt: 'Statamic',
-      },
+    this.vimeoIds = [
+      { id: '506079196' },
+      { id: '506079293' },
+      { id: '511581071' },
+      { id: '506079156' },
     ];
 
     this.prices = [
