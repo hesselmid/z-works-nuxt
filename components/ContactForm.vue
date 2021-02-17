@@ -121,11 +121,11 @@
                   <input
                     id="standaard"
                     name="standaard"
-                    value="3750"
+                    value="check"
                     type="radio"
                     class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
                   />
-                  <label for="price-one" class="ml-3">
+                  <label for="standaard" class="ml-3">
                     <span class="block text-sm text-gray-700">€ 3.750</span>
                   </label>
                 </div>
@@ -133,23 +133,23 @@
                   <input
                     id="uitgebreid"
                     name="uitgebreid"
-                    value="4950"
+                    value="check"
                     type="radio"
                     class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
                   />
-                  <label for="price-two" class="ml-3">
+                  <label for="uitgebreid" class="ml-3">
                     <span class="block text-sm text-gray-700">€ 4.950</span>
                   </label>
                 </div>
                 <div class="flex items-center">
                   <input
-                    id="weetiknogniet"
-                    name="weetiknogniet"
-                    value=""
+                    id="weet_ik_nog_niet"
+                    name="weet_ik_nog_niet"
+                    value="check"
                     type="radio"
                     class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
                   />
-                  <label for="price-three" class="ml-3">
+                  <label for="weet_ik_nog_niet" class="ml-3">
                     <span class="block text-sm text-gray-700"
                       >Weet ik nog niet</span
                     >
