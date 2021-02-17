@@ -14,6 +14,10 @@ export default {
         content:
           'Een bedrijfsvideo maakt impact. Op televisie, social media en je website. Eenmalige investering, eindeloos resultaat. Laat je bedrijf zien met een professionele bedrijfsfilm van Z-Works.',
       },
+      {
+        name: 'google-site-verification',
+        content: 'LZgGPqTpyccWLs25eOrUBjXZho3UQOPUaruuXa0r-Vo',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
