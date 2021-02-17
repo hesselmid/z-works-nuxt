@@ -10,54 +10,11 @@
           Meer dan 6.500 tevreden klanten en geproduceerde video’s
         </p>
         <div class="grid gap-8 mt-6 md:grid-cols-2 lg:mt-8">
-          <div>
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe
-                src="https://player.vimeo.com/video/506079196?title=0&byline=0&portrait=0"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:15px;"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-          <div>
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe
-                src="https://player.vimeo.com/video/506079293?title=0&byline=0&portrait=0"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:15px;"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-          <div>
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe
-                src="https://player.vimeo.com/video/511581071?title=0&byline=0&portrait=0"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:15px;"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-          <div>
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe
-                src="https://player.vimeo.com/video/506079156?title=0&byline=0&portrait=0"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:15px;"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
+          <VimeoEmbed
+            v-for="vimeoId in vimeoIds"
+            :key="vimeoId"
+            v-bind="vimeoId"
+          />
         </div>
       </div>
     </div>
@@ -123,6 +80,7 @@ export default {
   },
   data() {
     return {
+      vimeoIds: [],
       logos: [],
       prices: [],
       faqs: [],
