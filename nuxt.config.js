@@ -18,7 +18,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   components: true,
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-analytics'],
   build: {
     html: {
       minify: {
@@ -28,4 +28,7 @@ export default {
     transpile: ['vue2-smooth-scroll'],
   },
   plugins: ['~/plugins/vue2-smooth-scroll.js'],
+  googleAnalytics: {
+    id: 'UA-136136233-11',
+  },
 };
