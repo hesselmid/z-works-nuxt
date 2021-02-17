@@ -25,38 +25,40 @@
             op afstand.
           </p>
           <form
-            action="#"
+            name="contact"
             method="POST"
+            data-netlify="true"
             class="grid grid-cols-1 mt-9 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label
-                for="first_name"
+                for="voornaam"
                 class="block text-sm font-medium text-gray-700"
                 >Voornaam</label
               >
               <div class="mt-1">
                 <input
                   type="text"
-                  name="first_name"
-                  id="first_name"
-                  autocomplete="given-name"
+                  name="voornaam"
+                  id="voornaam"
+                  required
                   class="block w-full border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-yellow-500 focus:border-yellow-500"
                 />
               </div>
             </div>
             <div>
               <label
-                for="last_name"
+                for="achternaam"
                 class="block text-sm font-medium text-gray-700"
                 >Achternaam</label
               >
               <div class="mt-1">
                 <input
                   type="text"
-                  name="last_name"
-                  id="last_name"
-                  autocomplete="family-name"
+                  name="achternaam"
+                  id="achternaam"
+                  required
                   class="block w-full border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-yellow-500 focus:border-yellow-500"
                 />
               </div>
@@ -69,24 +71,24 @@
                 <input
                   id="email"
                   name="email"
+                  required
                   type="email"
-                  autocomplete="email"
                   class="block w-full border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-yellow-500 focus:border-yellow-500"
                 />
               </div>
             </div>
             <div class="sm:col-span-2">
               <label
-                for="company"
+                for="bedrijf"
                 class="block text-sm font-medium text-gray-700"
                 >Bedrijf</label
               >
               <div class="mt-1">
                 <input
                   type="text"
-                  name="company"
-                  id="company"
-                  autocomplete="organization"
+                  name="bedrijf"
+                  id="bedrijf"
+                  required
                   class="block w-full border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-yellow-500 focus:border-yellow-500"
                 />
               </div>
@@ -94,7 +96,7 @@
             <div class="sm:col-span-2">
               <div class="flex justify-between">
                 <label
-                  for="phone"
+                  for="telefoon"
                   class="block text-sm font-medium text-gray-700"
                   >Telefoonnummer</label
                 >
@@ -102,9 +104,9 @@
               <div class="mt-1">
                 <input
                   type="text"
-                  name="phone"
-                  id="phone"
-                  autocomplete="tel"
+                  name="telefoon"
+                  id="telefoon"
+                  required
                   aria-describedby="phone_description"
                   class="block w-full border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-yellow-500 focus:border-yellow-500"
                 />
@@ -117,8 +119,8 @@
               <div class="grid grid-cols-1 mt-4 gap-y-4">
                 <div class="flex items-center">
                   <input
-                    id="price-one"
-                    name="budget"
+                    id="standaard"
+                    name="standaard"
                     value="3750"
                     type="radio"
                     class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
@@ -129,8 +131,8 @@
                 </div>
                 <div class="flex items-center">
                   <input
-                    id="price-two"
-                    name="budget"
+                    id="uitgebreid"
+                    name="uitgebreid"
                     value="4950"
                     type="radio"
                     class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
@@ -141,9 +143,9 @@
                 </div>
                 <div class="flex items-center">
                   <input
-                    id="price-three"
-                    name="budget"
-                    value="50k-100k"
+                    id="weetiknogniet"
+                    name="weetiknogniet"
+                    value=""
                     type="radio"
                     class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
                   />
