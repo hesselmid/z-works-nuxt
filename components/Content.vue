@@ -17,7 +17,7 @@
           class="mx-auto text-base max-w-prose lg:max-w-lg lg:ml-auto lg:mr-0"
         >
           <h2
-            class="font-semibold leading-6 tracking-wide text-yellow-600 uppercase"
+            class="font-semibold leading-6 tracking-wide text-yellow-700 uppercase"
           >
             Een goed begin is het halve werk
           </h2>
