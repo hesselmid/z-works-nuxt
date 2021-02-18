@@ -74,8 +74,31 @@
 <script>
 export default {
   head() {
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name:
+            "Wat is de toegevoegde waarde van een professionele bedrijfsvideo?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Een goede bedrijfsvideo verhoogt de resultaten van jouw onderneming. Video’s op social media realiseren <strong>1200% meer deelacties</strong> dan een combinatie van tekst en afbeeldingen, <strong>26%</strong> van kijkers zoekt meer informatie na het zien van een bedrijfsvideo en de koopkans van klanten is <strong>1.8</strong> keer groter na het zien van een video. Kortom: een bedrijfsvideo laten maken is altijd een goed idee.",
+          },
+        },
+      ],
+    };
+
     return {
-      title: 'Professionele bedrijfsfilm laten maken?',
+      title: "Professionele bedrijfsfilm laten maken?",
+      script: [
+        {
+          type: "application/ld+json",
+          json: structuredData,
+        },
+      ],
     };
   },
   data() {
@@ -88,39 +111,39 @@ export default {
   },
   fetch() {
     this.vimeoIds = [
-      { id: '506079196' },
-      { id: '506079293' },
-      { id: '511581071' },
-      { id: '506079156' },
+      { id: "506079196" },
+      { id: "506079293" },
+      { id: "511581071" },
+      { id: "506079156" },
     ];
 
     this.prices = [
       {
-        headline: 'Bedrijfsvideo 2-4 min',
-        price: '3.750',
-        subline: 'Professionele bedrijfsfilm DCP 2 tot 4 minuten.',
+        headline: "Bedrijfsvideo 2-4 min",
+        price: "3.750",
+        subline: "Professionele bedrijfsfilm DCP 2 tot 4 minuten.",
         features: [
-          'Opnamedag incl. camera en geluid (10 uur)',
-          'Maximaal 2 locaties',
-          'Regisseur',
-          'Redacteur',
-          'Editing en vormgeving',
-          'Audio-nabewerking',
-          'Stockmuziek',
+          "Opnamedag incl. camera en geluid (10 uur)",
+          "Maximaal 2 locaties",
+          "Regisseur",
+          "Redacteur",
+          "Editing en vormgeving",
+          "Audio-nabewerking",
+          "Stockmuziek",
         ],
       },
       {
-        headline: 'Bedrijfsvideo 4-6 min',
-        price: '4.950',
-        subline: 'Professionele bedrijfsfilm DCP 4 tot 6 minuten.',
+        headline: "Bedrijfsvideo 4-6 min",
+        price: "4.950",
+        subline: "Professionele bedrijfsfilm DCP 4 tot 6 minuten.",
         features: [
-          '2 opnamedagen incl. camera en geluid (10 uur)',
-          'Maximaal 4 locaties',
-          '2 dagen regisseur',
-          '1,5 dag redacteur',
-          'Editing en vormgeving',
-          'Audio-nabewerking',
-          'Stockmuziek',
+          "2 opnamedagen incl. camera en geluid (10 uur)",
+          "Maximaal 4 locaties",
+          "2 dagen regisseur",
+          "1,5 dag redacteur",
+          "Editing en vormgeving",
+          "Audio-nabewerking",
+          "Stockmuziek",
         ],
       },
     ];
@@ -128,31 +151,31 @@ export default {
     this.faqs = [
       {
         question:
-          'Wat is de toegevoegde waarde van een professionele bedrijfsvideo?',
+          "Wat is de toegevoegde waarde van een professionele bedrijfsvideo?",
         answer:
-          'Een goede bedrijfsvideo verhoogt de resultaten van jouw onderneming. Video’s op social media realiseren <strong>1200% meer deelacties</strong> dan een combinatie van tekst en afbeeldingen, <strong>26%</strong> van kijkers zoekt meer informatie na het zien van een bedrijfsvideo en de koopkans van klanten is <strong>1.8</strong> keer groter na het zien van een video. Kortom: een bedrijfsvideo laten maken is altijd een goed idee.',
+          "Een goede bedrijfsvideo verhoogt de resultaten van jouw onderneming. Video’s op social media realiseren <strong>1200% meer deelacties</strong> dan een combinatie van tekst en afbeeldingen, <strong>26%</strong> van kijkers zoekt meer informatie na het zien van een bedrijfsvideo en de koopkans van klanten is <strong>1.8</strong> keer groter na het zien van een video. Kortom: een bedrijfsvideo laten maken is altijd een goed idee.",
       },
       {
-        question: 'Wat is mijn rol als ondernemer tijdens het creatieproces?',
+        question: "Wat is mijn rol als ondernemer tijdens het creatieproces?",
         answer:
-          'Voordat we starten met opnemen, kijken we samen welke vorm van video het beste bij jouw bedrijf past. <strong>Ieder bedrijf is uniek en wij geloven dat iedere video dat ook moet zijn</strong>. We koppelen jouw doelstellingen, wensen en behoeften aan onze kennis van video, om zo samen tot het allerbeste resultaat te komen.',
-      },
-      {
-        question:
-          'Is het mogelijk mijn bedrijfsvideo op televisie uit te zenden?',
-        answer:
-          'Het is zeker mogelijk om <strong>op televisie</strong> te komen<strong>met jouw bedrijf</strong>. Samen met onze partners, creëren wij televisiecontent voor o.a. De Barometer, Op de Zaak en How it’s Done. Onze video’s worden uitgezonden op <strong>RTL Z</strong>, <strong>RTL 4</strong>, <strong>SBS6</strong> en <strong>RTL 7</strong>. Neem contact met ons op voor meer informatie over de mogelijkheden voor jouw bedrijf.',
-      },
-      {
-        question: 'Hoe haal ik het maximale uit mijn bedrijfsvideo?',
-        answer:
-          'Om jouw video extra schwung te geven, zijn er een aantal optionele toevoegingen die wij aanbieden. Zo is het mogelijk drone-opnames in de video te verwerken, bieden wij uitgebreide en professionele visagie aan, realiseren wij in diverse talen ondertiteling en zorgen wij voor de perfecte voice-over voor jouw bedrijfsfilm. Het is ook mogelijk figuranten in te huren voor de video. Neem contact op voor de mogelijkheden en tarieven.',
+          "Voordat we starten met opnemen, kijken we samen welke vorm van video het beste bij jouw bedrijf past. <strong>Ieder bedrijf is uniek en wij geloven dat iedere video dat ook moet zijn</strong>. We koppelen jouw doelstellingen, wensen en behoeften aan onze kennis van video, om zo samen tot het allerbeste resultaat te komen.",
       },
       {
         question:
-          'Waarom zou ik voor Z-Works kiezen als ik een bedrijfsvideo wil?',
+          "Is het mogelijk mijn bedrijfsvideo op televisie uit te zenden?",
         answer:
-          'Wij zijn marktleider op het gebied van professionele bedrijfsvideo’s en maken al jaren video’s, waaronder televisieprogramma’s. Met meer dan 6.500 tevreden klanten en bedrijfsvideo’s, bouwden we door de jaren heen een mooi portfolio op. Met een divers team, bestaande uit regisseurs, cameramensen, strategen en marketeers, tillen wij iedere onderneming naar een hoger niveau.',
+          "Het is zeker mogelijk om <strong>op televisie</strong> te komen<strong>met jouw bedrijf</strong>. Samen met onze partners, creëren wij televisiecontent voor o.a. De Barometer, Op de Zaak en How it’s Done. Onze video’s worden uitgezonden op <strong>RTL Z</strong>, <strong>RTL 4</strong>, <strong>SBS6</strong> en <strong>RTL 7</strong>. Neem contact met ons op voor meer informatie over de mogelijkheden voor jouw bedrijf.",
+      },
+      {
+        question: "Hoe haal ik het maximale uit mijn bedrijfsvideo?",
+        answer:
+          "Om jouw video extra schwung te geven, zijn er een aantal optionele toevoegingen die wij aanbieden. Zo is het mogelijk drone-opnames in de video te verwerken, bieden wij uitgebreide en professionele visagie aan, realiseren wij in diverse talen ondertiteling en zorgen wij voor de perfecte voice-over voor jouw bedrijfsfilm. Het is ook mogelijk figuranten in te huren voor de video. Neem contact op voor de mogelijkheden en tarieven.",
+      },
+      {
+        question:
+          "Waarom zou ik voor Z-Works kiezen als ik een bedrijfsvideo wil?",
+        answer:
+          "Wij zijn marktleider op het gebied van professionele bedrijfsvideo’s en maken al jaren video’s, waaronder televisieprogramma’s. Met meer dan 6.500 tevreden klanten en bedrijfsvideo’s, bouwden we door de jaren heen een mooi portfolio op. Met een divers team, bestaande uit regisseurs, cameramensen, strategen en marketeers, tillen wij iedere onderneming naar een hoger niveau.",
       },
     ];
   },
