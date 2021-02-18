@@ -19,21 +19,7 @@ export default {
         content: "LZgGPqTpyccWLs25eOrUBjXZho3UQOPUaruuXa0r-Vo",
       },
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "preconnect",
-        href: "https://player.vimeo.com",
-      },
-      {
-        rel: "preconnect",
-        href: "https://i.vimeocdn.com",
-      },
-      {
-        rel: "preconnect",
-        href: "https://f.vimeocdn.com",
-      },
-    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
   components: true,
   buildModules: [
