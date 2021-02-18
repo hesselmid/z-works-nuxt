@@ -77,19 +77,19 @@ export default {
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name:
-            "Wat is de toegevoegde waarde van een professionele bedrijfsvideo?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text:
-              "Een goede bedrijfsvideo verhoogt de resultaten van jouw onderneming. Video’s op social media realiseren <strong>1200% meer deelacties</strong> dan een combinatie van tekst en afbeeldingen, <strong>26%</strong> van kijkers zoekt meer informatie na het zien van een bedrijfsvideo en de koopkans van klanten is <strong>1.8</strong> keer groter na het zien van een video. Kortom: een bedrijfsvideo laten maken is altijd een goed idee.",
-          },
-        },
-      ],
+      mainEntity: [],
     };
+
+    this.faqs.forEach((faq) => {
+      structuredData.mainEntity.push({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      });
+    });
 
     return {
       title: "Professionele bedrijfsfilm laten maken?",
