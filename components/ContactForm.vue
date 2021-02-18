@@ -2,9 +2,16 @@
   <div class="relative bg-white" id="contact-form">
     <div class="lg:absolute lg:inset-0">
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
+        <!-- <img
           class="object-cover w-full h-56 lg:absolute lg:h-full"
           src="~/assets/images/gordon-cowie-tyuVOf1G3d0-unsplash.jpg"
+          alt="Opname van bedrijfsvideo"
+        /> -->
+        <nuxt-img
+          class="object-cover w-full h-56 lg:absolute lg:h-full"
+          src="/gordon-cowie-tyuVOf1G3d0-unsplash.jpg"
+          sizes="sm:640px md:768px lg:1024px xl:1280px"
+          quality="80"
           alt="Opname van bedrijfsvideo"
         />
       </div>

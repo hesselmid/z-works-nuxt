@@ -22,7 +22,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   components: true,
-  buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-analytics'],
+  buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-analytics', '@nuxt/image'],
   build: {
     html: {
       minify: {
