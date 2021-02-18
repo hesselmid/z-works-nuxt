@@ -49,7 +49,7 @@ export default {
     },
     transpile: ["vue2-smooth-scroll"],
   },
-  plugins: ["~/plugins/vue2-smooth-scroll.js"],
+  plugins: ["~/plugins/vue2-smooth-scroll.js", "~/plugins/vimeo.client.js"],
   googleAnalytics: {
     id: "UA-136136233-11",
   },

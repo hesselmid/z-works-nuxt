@@ -1254,6 +1254,11 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
+"@slightlyoff/lite-vimeo@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@slightlyoff/lite-vimeo/-/lite-vimeo-0.1.2.tgz#907fea46c390427e3fe5ec799cf60ec8c4188919"
+  integrity sha512-KkmMgogBfAHyk+Q1MvDWmTmif5uYIKzWLoW/vbxLzafC4GldU1ssKoo7VZ+cBtH19RFHFVrxy+PMd7IRghAT6Q==
+
 "@tailwindcss/forms@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.2.1.tgz#3244b185854fae1a7cbe8d2456314d8b2d98cf43"
