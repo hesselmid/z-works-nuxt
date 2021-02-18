@@ -126,7 +126,7 @@
                     type="radio"
                     class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
                   />
-                  <label for="pakket" class="ml-3">
+                  <label for="standaard" class="ml-3">
                     <span class="block text-sm text-gray-700">€ 3.750</span>
                   </label>
                 </div>
@@ -138,7 +138,7 @@
                     type="radio"
                     class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
                   />
-                  <label for="pakket" class="ml-3">
+                  <label for="uitgebreid" class="ml-3">
                     <span class="block text-sm text-gray-700">€ 4.950</span>
                   </label>
                 </div>
@@ -150,7 +150,7 @@
                     type="radio"
                     class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
                   />
-                  <label for="pakket" class="ml-3">
+                  <label for="weet_ik_nog_niet" class="ml-3">
                     <span class="block text-sm text-gray-700"
                       >Weet ik nog niet</span
                     >
@@ -161,7 +161,7 @@
             <div class="text-right sm:col-span-2">
               <button
                 type="submit"
-                class="inline-flex justify-center w-full px-8 py-3 text-base font-medium text-white bg-yellow-700 border border-transparent rounded-md shadow-sm md:py-4 md:px-10 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                class="inline-flex justify-center w-full px-8 py-3 text-base font-medium text-white bg-yellow-700 border border-transparent rounded-md shadow-sm md:py-4 md:px-10 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
               >
                 Verstuur
               </button>
