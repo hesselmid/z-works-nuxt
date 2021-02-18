@@ -5,7 +5,7 @@
         <img
           class="object-cover w-full h-56 lg:absolute lg:h-full"
           src="~/assets/images/gordon-cowie-tyuVOf1G3d0-unsplash.jpg"
-          alt=""
+          alt="Cameraman stelt videocamera in"
         />
       </div>
     </div>

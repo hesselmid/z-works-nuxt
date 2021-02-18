@@ -28,7 +28,7 @@
                   <img
                     class="w-auto h-20"
                     src="~/assets/images/Logo-Z-works-ce7b1ec2c09b71ee7b014c59c8d34d14.png"
-                    alt=""
+                    alt="Opname van bedrijfsfilm"
                   />
                 </a>
               </div>
