@@ -1,7 +1,7 @@
 <template>
   <main class="flex flex-col items-center justify-center h-screen">
     <h1
-      class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
+      class="text-4xl font-extrabold tracking-tight text-center text-gray-900 sm:text-5xl md:text-6xl"
     >
       Bedankt voor uw contactaanvraag!
     </h1>
@@ -24,7 +24,7 @@
 export default {
   head() {
     return {
-      title: 'Bedankt voor uw contactaanvraag!',
+      title: "Bedankt voor uw contactaanvraag!",
     };
   },
 };
