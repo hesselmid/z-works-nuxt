@@ -3,7 +3,7 @@
     <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
       <div>
         <h3
-          class="inline-flex px-4 py-1 text-sm font-semibold tracking-wide text-yellow-600 uppercase bg-yellow-100 rounded-full"
+          class="inline-flex px-4 py-1 text-sm font-semibold tracking-wide text-yellow-700 uppercase bg-yellow-100 rounded-full"
         >
           {{ headline }}
         </h3>
@@ -42,6 +42,6 @@
 
 <script>
 export default {
-  props: ['headline', 'price', 'subline', 'features'],
+  props: ["headline", "price", "subline", "features"],
 };
 </script>

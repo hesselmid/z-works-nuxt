@@ -23,7 +23,7 @@
       <div class="px-4 mx-auto mt-8 text-center max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto space-y-2 lg:max-w-none">
           <h2
-            class="text-3xl font-extrabold tracking-tight text-yellow-500 sm:text-4xl"
+            class="text-3xl font-extrabold tracking-tight text-yellow-600 sm:text-4xl"
           >
             Prijzen
           </h2>
