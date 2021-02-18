@@ -4,7 +4,7 @@
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
           class="object-cover w-full h-56 lg:absolute lg:h-full"
-          src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixqx=yl8Wv1BxXp&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
+          src="~/assets/images/gordon-cowie-tyuVOf1G3d0-unsplash.jpg"
           alt=""
         />
       </div>

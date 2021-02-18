@@ -12,7 +12,7 @@
         <div class="grid gap-8 mt-6 md:grid-cols-2 lg:mt-8">
           <VimeoEmbed
             v-for="vimeoId in vimeoIds"
-            :key="vimeoId"
+            :key="vimeoId.id"
             v-bind="vimeoId"
           />
         </div>
