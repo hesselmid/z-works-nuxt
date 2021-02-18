@@ -93,6 +93,7 @@ export default {
 
     return {
       title: "Professionele bedrijfsfilm laten maken?",
+      link: [{ rel: "canonical", href: "https://bedrijfsvideo.z-works.nl/" }],
       script: [
         {
           type: "application/ld+json",

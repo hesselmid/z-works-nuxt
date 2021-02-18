@@ -25,6 +25,12 @@ export default {
   head() {
     return {
       title: "Bedankt voor uw contactaanvraag!",
+      meta: [
+        {
+          name: "robots",
+          content: "noindex, follow",
+        },
+      ],
     };
   },
 };
