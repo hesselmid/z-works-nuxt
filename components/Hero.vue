@@ -44,7 +44,7 @@
               class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
             >
               Professionele
-              <span class="text-yellow-500">bedrijfsfilm</span> laten maken?
+              <span class="text-yellow-600">bedrijfsfilm</span> laten maken?
             </h1>
             <p
               class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
@@ -60,7 +60,7 @@
               <div class="rounded-md shadow">
                 <a
                   href="#contact-form"
-                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-yellow-600 border border-transparent rounded-md hover:bg-yellow-700 md:py-4 md:text-lg md:px-10"
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-yellow-700 border border-transparent rounded-md hover:bg-yellow-800 md:py-4 md:text-lg md:px-10"
                   v-smooth-scroll="{ duration: 1000 }"
                 >
                   Offerte aanvragen
