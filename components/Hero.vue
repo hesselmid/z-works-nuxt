@@ -28,7 +28,7 @@
                   <img
                     class="w-auto h-20"
                     src="~/assets/images/Logo-Z-works-ce7b1ec2c09b71ee7b014c59c8d34d14.png"
-                    alt="Opname van bedrijfsfilm"
+                    alt="Logo Z-Works"
                   />
                 </a>
               </div>
@@ -81,10 +81,12 @@
       </div>
     </div>
     <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img
+      <nuxt-img
         class="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
-        src="~/assets/images/marcos-rocha-_XgGN5yo1QE-unsplash-d18bd44552b956a6a3a7f6865399da0e.jpg"
-        alt=""
+        src="/marcos-rocha-_XgGN5yo1QE-unsplash-d18bd44552b956a6a3a7f6865399da0e.jpg"
+        sizes="sm:640px md:768px lg:1024px xl:1280px"
+        quality="80"
+        alt="Opname bedrijfsvideo"
       />
     </div>
   </div>
