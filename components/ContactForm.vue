@@ -6,7 +6,7 @@
           class="object-cover w-full h-56 lg:absolute lg:h-full"
           src="/gordon-cowie-tyuVOf1G3d0-unsplash.jpg"
           sizes="sm:640px md:768px lg:1024px xl:1280px"
-          quality="80"
+          quality="70"
           loading="lazy"
           alt="Opname bedrijfsvideo"
         />

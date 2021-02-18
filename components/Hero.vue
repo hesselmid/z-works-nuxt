@@ -85,7 +85,7 @@
         class="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
         src="/marcos-rocha-_XgGN5yo1QE-unsplash-d18bd44552b956a6a3a7f6865399da0e.jpg"
         sizes="sm:640px md:768px lg:1024px xl:1280px"
-        quality="80"
+        quality="70"
         alt="Opname bedrijfsvideo"
       />
     </div>
