@@ -39,4 +39,13 @@ export default {
   googleAnalytics: {
     id: "UA-136136233-11",
   },
+  modules: [
+    [
+      "@netsells/nuxt-hotjar",
+      {
+        id: "2253881",
+        sv: "6",
+      },
+    ],
+  ],
 };
