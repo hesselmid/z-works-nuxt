@@ -116,57 +116,35 @@
                 />
               </div>
             </div>
-            <fieldset class="sm:col-span-2">
-              <legend class="block text-sm font-medium text-gray-700">
-                Pakket interesse
-              </legend>
-              <div class="grid grid-cols-1 mt-4 gap-y-4">
-                <div class="flex items-center">
-                  <input
-                    id="standaard"
-                    name="pakket"
-                    value="3.750"
-                    type="radio"
-                    class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
-                  />
-                  <label for="standaard" class="ml-3">
-                    <span class="block text-sm text-gray-700">€ 3.750</span>
-                  </label>
-                </div>
-                <div class="flex items-center">
-                  <input
-                    id="uitgebreid"
-                    name="pakket"
-                    value="4.950"
-                    type="radio"
-                    class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
-                  />
-                  <label for="uitgebreid" class="ml-3">
-                    <span class="block text-sm text-gray-700">€ 4.950</span>
-                  </label>
-                </div>
-                <div class="flex items-center">
-                  <input
-                    id="weet_ik_nog_niet"
-                    name="pakket"
-                    value="Weet ik nog niet"
-                    type="radio"
-                    class="w-4 h-4 text-yellow-600 border-gray-300 focus:ring-yellow-500"
-                  />
-                  <label for="weet_ik_nog_niet" class="ml-3">
-                    <span class="block text-sm text-gray-700"
-                      >Weet ik nog niet</span
-                    >
-                  </label>
-                </div>
+            <div class="sm:col-span-2">
+              <div class="flex justify-between">
+                <label
+                  for="how_can_we_help"
+                  class="block text-sm font-medium text-gray-700"
+                  >Hoe kunnen we helpen?</label
+                >
+                <span
+                  id="how_can_we_help_description"
+                  class="text-sm text-gray-500"
+                  >Optioneel</span
+                >
               </div>
-            </fieldset>
-            <div class="text-right sm:col-span-2">
+              <div class="mt-1">
+                <textarea
+                  id="how_can_we_help"
+                  name="how_can_we_help"
+                  aria-describedby="how_can_we_help_description"
+                  rows="4"
+                  class="block w-full border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-yellow-500 focus:border-yellow-500"
+                ></textarea>
+              </div>
+            </div>
+            <div class="mt-6 text-right sm:col-span-2">
               <button
                 type="submit"
                 class="inline-flex justify-center w-full px-8 py-3 text-base font-medium text-white bg-yellow-700 border border-transparent rounded-md shadow-sm md:py-4 md:px-10 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
               >
-                Verstuur
+                Neem contact op
               </button>
             </div>
           </form>

@@ -1,20 +1,17 @@
 <template>
   <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
     <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
-      <div>
+      <div class="flex justify-center">
         <h3
           class="inline-flex px-4 py-1 text-sm font-semibold tracking-wide text-yellow-700 uppercase bg-yellow-100 rounded-full"
         >
           {{ headline }}
         </h3>
       </div>
-      <div class="flex items-baseline mt-4 text-6xl font-extrabold">
-        &euro; {{ price }}
-        <span class="ml-1 text-2xl font-medium text-gray-500">
-          Excl. BTW
-        </span>
+      <div class="mt-4 text-6xl font-extrabold text-center">
+        {{ price }}
       </div>
-      <p class="mt-5 text-lg text-gray-500">{{ subline }}</p>
+      <p class="mt-5 text-lg text-center text-gray-500">{{ subline }}</p>
     </div>
     <div
       class="flex flex-col justify-between flex-1 px-6 pt-6 pb-8 space-y-6 bg-gray-50 sm:p-10 sm:pt-6"
@@ -33,7 +30,7 @@
           aria-describedby="tier-standard"
           v-smooth-scroll="{ duration: 1000 }"
         >
-          Offerte aanvragen
+          Meer informatie
         </a>
       </div>
     </div>

@@ -25,7 +25,7 @@
           <h2
             class="text-3xl font-extrabold tracking-tight text-yellow-600 sm:text-4xl"
           >
-            Prijzen
+            Pakketten
           </h2>
           <p class="text-3xl font-extrabold sm:text-4xl lg:text-5xl">
             Het beste van het beste, voor de allerlaagste prijs
@@ -68,6 +68,8 @@
     </div>
 
     <ContactForm />
+
+    <FaqAccordion :faqs="faqs" />
   </main>
 </template>
 
@@ -121,8 +123,8 @@ export default {
     this.prices = [
       {
         headline: "Bedrijfsvideo 2-4 min",
-        price: "3.750",
-        subline: "Professionele bedrijfsfilm DCP 2 tot 4 minuten.",
+        price: "Basic",
+        subline: "Professionele bedrijfsfilm 2 - 4 minuten.",
         features: [
           "Opnamedag incl. camera en geluid (10 uur)",
           "Maximaal 2 locaties",
@@ -135,8 +137,8 @@ export default {
       },
       {
         headline: "Bedrijfsvideo 4-6 min",
-        price: "4.950",
-        subline: "Professionele bedrijfsfilm DCP 4 tot 6 minuten.",
+        price: "Premium",
+        subline: "Professionele bedrijfsfilm 4 - 6 minuten.",
         features: [
           "2 opnamedagen incl. camera en geluid (10 uur)",
           "Maximaal 4 locaties",
