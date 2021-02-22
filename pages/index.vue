@@ -28,11 +28,10 @@
             Pakketten
           </h2>
           <p class="text-3xl font-extrabold sm:text-4xl lg:text-5xl">
-            Het beste van het beste, voor de allerlaagste prijs
+            Ieder bedrijf is anders, dus ieder pakket ook
           </p>
           <p class="text-xl text-gray-500">
-            Ieder bedrijf is anders, dus iedere bedrijfsvideo ook. Kies daarom
-            het pakket dat bij jouw bedrijf past.
+            Kies daarom het pakket dat het best jouw bedrijf past
           </p>
         </div>
       </div>
@@ -129,7 +128,7 @@ export default {
         price: "Premium",
         subline: "Professionele bedrijfsfilm 4 - 6 minuten.",
         features: [
-          "2 opnamedagen incl. camera en geluid (10 uur)",
+          "2 opnamedagen incl. camera en geluid (10 uur per dag)",
           "Maximaal 4 locaties",
           "2 dagen regisseur",
           "1,5 dag redacteur",
