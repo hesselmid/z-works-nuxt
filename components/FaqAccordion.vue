@@ -21,7 +21,8 @@
                     class="w-6 h-6 transform"
                     :class="{
                       'rotate-0': visibleFaqIndex !== faqIndex,
-                      '-rotate-180': visibleFaqIndex === faqIndex,
+                      'transform transition-transform duration-700 ease-out -rotate-180':
+                        visibleFaqIndex === faqIndex,
                     }"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -41,7 +42,11 @@
             </dt>
             <dd
               class="pr-12 mt-2"
-              :class="{ hidden: visibleFaqIndex !== faqIndex }"
+              :class="{
+                'absolute opacity-0': visibleFaqIndex !== faqIndex,
+                'static opacity-100 transition duration-700 ease-out':
+                  visibleFaqIndex === faqIndex,
+              }"
             >
               <p class="text-base text-gray-500" v-html="faq.answer"></p>
             </dd>
