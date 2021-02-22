@@ -112,7 +112,7 @@ export default {
     this.prices = [
       {
         headline: "Bedrijfsvideo 2-4 min",
-        price: "Basic",
+        price: "Standaard",
         subline: "Professionele bedrijfsfilm 2 - 4 minuten.",
         features: [
           "Opnamedag incl. camera en geluid (10 uur)",

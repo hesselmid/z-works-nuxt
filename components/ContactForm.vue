@@ -142,7 +142,7 @@
             <div class="mt-6 text-right sm:col-span-2">
               <button
                 type="submit"
-                class="inline-flex justify-center w-full px-8 py-3 text-base font-medium text-white bg-yellow-700 border border-transparent rounded-md shadow-sm md:py-4 md:px-10 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                class="inline-flex justify-center w-full px-8 py-3 text-base font-medium text-white bg-yellow-700 border border-transparent rounded-md shadow-sm md:py-4 md:px-10 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
               >
                 Neem contact op
               </button>

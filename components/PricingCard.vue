@@ -26,7 +26,7 @@
       <div class="rounded-md shadow">
         <a
           href="#contact-form"
-          class="flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-gray-800 border border-transparent rounded-md hover:bg-gray-900"
+          class="flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-gray-800 border border-transparent rounded-md hover:bg-gray-700"
           aria-describedby="tier-standard"
           v-smooth-scroll="{ duration: 1000 }"
         >

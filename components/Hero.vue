@@ -23,10 +23,10 @@
               class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0"
             >
               <div class="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
+                <a class="mx-auto" href="#">
                   <span class="sr-only">Z-Works</span>
                   <img
-                    class="w-auto h-20"
+                    class="w-auto h-16"
                     src="~/assets/images/Logo-Z-works-ce7b1ec2c09b71ee7b014c59c8d34d14.png"
                     alt="Logo Z-Works"
                   />
@@ -59,20 +59,20 @@
             >
               <div class="rounded-md shadow">
                 <a
-                  href="#contact-form"
-                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-yellow-700 border border-transparent rounded-md hover:bg-yellow-800 md:py-4 md:text-lg md:px-10"
+                  href="#prices"
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-yellow-700 border border-transparent rounded-md hover:bg-yellow-600 md:py-4 md:text-lg md:px-10"
                   v-smooth-scroll="{ duration: 1000 }"
                 >
-                  Direct contact
+                  Onze pakketten
                 </a>
               </div>
               <div class="mt-3 sm:mt-0 sm:ml-3">
                 <a
-                  href="#prices"
-                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-yellow-700 bg-yellow-100 border border-transparent rounded-md hover:bg-yellow-200 md:py-4 md:text-lg md:px-10"
+                  href="#contact-form"
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-yellow-700 bg-yellow-200 border border-transparent rounded-md hover:bg-yellow-100 md:py-4 md:text-lg md:px-10"
                   v-smooth-scroll="{ duration: 1000 }"
                 >
-                  Onze pakketten
+                  Direct contact
                 </a>
               </div>
             </div>
