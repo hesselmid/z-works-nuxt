@@ -56,20 +56,9 @@
 
     <Content />
 
-    <div class="bg-white">
-      <div class="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-          Veelgestelde vragen
-        </h2>
-        <div class="mt-12">
-          <FaqList :faqs="faqs" />
-        </div>
-      </div>
-    </div>
+    <FaqAccordion :faqs="faqs" />
 
     <ContactForm />
-
-    <FaqAccordion :faqs="faqs" />
   </main>
 </template>
 
