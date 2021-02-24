@@ -39,12 +39,15 @@
                 </span>
               </button>
             </dt>
-            <dd
-              class="pr-12 mt-2 transition-opacity duration-1000 ease-in-out"
-              :class="{ 'hidden opacity-0': visibleFaqIndex !== faqIndex }"
+            <transition
+              enter-class="opacity-0"
+              enter-active-class="transition-opacity duration-700"
+              enter-to="opacity-100"
             >
-              <p class="text-base text-gray-500" v-html="faq.answer"></p>
-            </dd>
+              <dd class="pr-12 mt-2" v-show="visibleFaqIndex === faqIndex">
+                <p class="text-base text-gray-500" v-html="faq.answer"></p>
+              </dd>
+            </transition>
           </div>
         </dl>
       </div>
