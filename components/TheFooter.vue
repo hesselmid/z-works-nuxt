@@ -17,6 +17,17 @@
               <li class="text-base text-gray-300">
                 3011 AD Rotterdam
               </li>
+              <li class="text-base text-gray-300">
+                <a
+                  href="tel:0854862700"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
+                  title="Telefoonnummer"
+                  class="text-base text-gray-300 hover:text-white"
+                >
+                  085 – 486 2700
+                </a>
+              </li>
               <li>
                 <a
                   href="mailto:bedrijfsvideo@z-works.nl"

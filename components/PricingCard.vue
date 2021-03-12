@@ -8,8 +8,9 @@
           {{ headline }}
         </h3>
       </div>
-      <div class="mt-4 text-6xl font-extrabold text-center">
-        {{ price }}
+      <div class="mt-4 text-center">
+        <span class="text-lg text-gray-500">Vanaf</span>
+        <span class="text-6xl font-extrabold">{{ price }}</span>
       </div>
       <p class="mt-5 text-lg text-center text-gray-500">{{ subline }}</p>
     </div>
@@ -39,6 +40,6 @@
 
 <script>
 export default {
-  props: ["headline", "price", "subline", "features"],
+  props: ['headline', 'price', 'subline', 'features'],
 };
 </script>
