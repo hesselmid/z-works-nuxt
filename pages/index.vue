@@ -1,6 +1,6 @@
 <template>
   <main>
-    <CallMeBack v-if="showCallMeBack" />
+    <CallMeBack v-show="showCallMeBack" />
     <Hero />
 
     <div class="bg-white">
@@ -99,7 +99,7 @@ export default {
       logos: [],
       prices: [],
       faqs: [],
-      showCallMeBack: false,
+      showCallMeBack: true,
     };
   },
   fetch() {
