@@ -6,6 +6,7 @@
     data-netlify="true"
     action="/bedankt"
   >
+    <input type="hidden" name="form-name" value="callmeback" />
     <div>
       <h3 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
         Bel mij terug
