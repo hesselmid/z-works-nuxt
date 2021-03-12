@@ -99,7 +99,7 @@ export default {
       logos: [],
       prices: [],
       faqs: [],
-      showCallMeBack: true,
+      showCallMeBack: false,
     };
   },
   fetch() {
@@ -173,7 +173,10 @@ export default {
     ];
   },
   mounted() {
-    setTimeout(() => (this.showCallMeBack = true), 10000);
+    const that = this;
+    setTimeout(function() {
+      that.showCallMeBack = true;
+    }, 6000);
   },
 };
 </script>
