@@ -1,5 +1,6 @@
 <template>
   <main>
+    <CallMeBack v-if="showCallMeBack" />
     <Hero />
 
     <div class="bg-white">
@@ -98,6 +99,7 @@ export default {
       logos: [],
       prices: [],
       faqs: [],
+      showCallMeBack: false,
     };
   },
   fetch() {
@@ -169,6 +171,9 @@ export default {
           'Wij zijn marktleider op het gebied van professionele bedrijfsvideo’s en maken al jaren video’s, waaronder televisieprogramma’s. Met meer dan 6.500 tevreden klanten en bedrijfsvideo’s, bouwden we door de jaren heen een mooi portfolio op. Met een divers team, bestaande uit regisseurs, cameramensen, strategen en marketeers, tillen wij iedere onderneming naar een hoger niveau.',
       },
     ];
+  },
+  mounted() {
+    setTimeout(() => (this.showCallMeBack = true), 10000);
   },
 };
 </script>
