@@ -8,9 +8,27 @@
   >
     <input type="hidden" name="form-name" value="callmeback" />
     <div>
-      <h3 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-        Bel mij terug
-      </h3>
+      <div class="flex justify-between">
+        <h3 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
+          Bel mij terug
+        </h3>
+        <button @click="closePopUp">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-10"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
       <input
         class="block w-full mt-4 border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500"
         type="text"
@@ -28,3 +46,14 @@
     </div>
   </form>
 </template>
+
+<script>
+export default {
+  emits: ["close-modal"],
+  methods: {
+    closePopUp() {
+      this.$emit("close-modal");
+    },
+  },
+};
+</script>
